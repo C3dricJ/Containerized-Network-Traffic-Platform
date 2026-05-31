@@ -1,6 +1,5 @@
 node_modules/
 .env
-captures/*.pcap
-captures/*.pcapng
-logs/
-dist/
+captures/
+*.pcap
+*.pcapng
