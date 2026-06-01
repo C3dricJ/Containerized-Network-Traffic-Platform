@@ -1,0 +1,26 @@
+services:
+
+  backend:
+    build: ./backend
+    container_name: network-backend
+    ports:
+      - "3000:3000"
+
+  postgres:
+    image: postgres:16
+    container_name: network-postgres
+
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: network_monitor
+
+    ports:
+      - "5432:5432"
+
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./postgres/init:/docker-entrypoint-initdb.d
+
+volumes:
+  postgres_data:
