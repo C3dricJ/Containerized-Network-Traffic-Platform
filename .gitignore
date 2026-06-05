@@ -3,3 +3,6 @@ node_modules/
 captures/
 *.pcap
 *.pcapng
+venv/
+__pycache__/
+*.pyc
