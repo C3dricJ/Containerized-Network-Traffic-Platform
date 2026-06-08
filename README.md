@@ -229,27 +229,3 @@ Access services:
 * Troubleshooting and Debugging
 
 ---
-
-## Future Enhancements
-
-* Real-time WebSocket packet streaming
-* GeoIP packet source mapping
-* Threat intelligence integration
-* Advanced Prometheus alerting
-* Kubernetes deployment
-* GitHub Actions CI/CD pipeline
-* Network anomaly detection
-* Role-based dashboard access
-* Historical traffic trend analysis
-
----
-
-## Author
-
-**Cedric Urbino**
-
-Application Engineer | Network & Cloud Engineering Graduate Student
-
-GitHub: https://github.com/C3dricJ
-Portfolio: https://c3dricj.github.io/
-LinkedIn: https://www.linkedin.com/in/cedric-urbino
