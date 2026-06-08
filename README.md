@@ -16,7 +16,7 @@ The project demonstrates practical skills in networking, backend development, Li
 * Grafana dashboards for traffic visualization
 * Prometheus metrics collection and monitoring
 * Dockerized multi-container deployment
-* Network traffic persistence and historical analysis
+* Network traffic analysis
 * API endpoints for packet retrieval and monitoring
 
 ---
