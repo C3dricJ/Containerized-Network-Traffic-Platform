@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Containerized Network Traffic Platform is a full-stack network monitoring solution designed to capture, store, analyze, and visualize network traffic in real time. The platform combines packet capture, containerized services, database storage, metrics collection, and dashboard visualization into a single deployable environment.
+Designed and deployed a full-stack network monitoring platform that captures and analyzes live packet traffic using Python and Scapy, processes data through a containerized Node.js backend, stores network telemetry in PostgreSQL, and visualizes real-time analytics with Grafana and Prometheus. Implemented containerized microservices, observability tooling, RESTful APIs, and automated data collection to demonstrate modern cloud-native monitoring and infrastructure engineering practices.
 
 The project demonstrates practical skills in networking, backend development, observability, Linux administration, containerization, and cloud-native monitoring technologies.
 
