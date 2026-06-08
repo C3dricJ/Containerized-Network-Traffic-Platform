@@ -1,7 +1,15 @@
 const express = require("express");
 const pool = require("./config/db");
+const client = require("prom-client");
 
 const app = express();
+
+client.collectDefaultMetrics();
+
+const packetCounter = new client.Counter({
+  name: "captured_packets_total",
+  help: "Total packets captured"
+});
 
 app.use(express.json());
 
@@ -56,6 +64,8 @@ app.post("/packets", async (req, res) => {
       ]
     );
 
+    packetCounter.inc();
+
     res.status(201).json(result.rows[0]);
 
   } catch (error) {
@@ -90,6 +100,19 @@ app.get("/packets", async (req, res) => {
     });
 
   }
+
+});
+
+app.get("/metrics", async (req, res) => {
+
+  res.set(
+    "Content-Type",
+    client.register.contentType
+  );
+
+  res.end(
+    await client.register.metrics()
+  );
 
 });
 
