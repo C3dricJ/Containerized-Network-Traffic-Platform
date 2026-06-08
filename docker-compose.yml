@@ -35,6 +35,19 @@ services:
     depends_on:
       - postgres
 
+  prometheus:
+    image: prom/prometheus
+    container_name: network-prometheus
+
+    ports:
+      - "9090:9090"
+
+    volumes:
+      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+
+    depends_on:
+      - backend
+
 volumes:
   postgres_data:
   grafana_data:
