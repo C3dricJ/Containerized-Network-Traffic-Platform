@@ -2,9 +2,9 @@
 
 ## Overview
 
-Designed and deployed a full-stack network monitoring platform that captures and analyzes live packet traffic using Python and Scapy, processes data through a containerized Node.js backend, stores network telemetry in PostgreSQL, and visualizes real-time analytics with Grafana and Prometheus. Implemented containerized microservices, observability tooling, RESTful APIs, and automated data collection to demonstrate modern cloud-native monitoring and infrastructure engineering practices.
+Designed and deployed a full-stack network monitoring platform that captures and analyzes live packet traffic using Python and Scapy which then processes data through a containerized Node.js backend and stores network data in PostgreSQL and finally visualizes the real-time analytics with Grafana and Prometheus. I implemented containerized microservices, observability/monitoring tools, RESTful APIs, and automated data collection to show modern cloud-native monitoring and infrastructure engineering practices.
 
-The project demonstrates practical skills in networking, backend development, observability, Linux administration, containerization, and cloud-native monitoring technologies.
+The project demonstrates practical skills in networking, backend development, Linux administration, containerization, and cloud-native monitoring technologies.
 
 ---
 
